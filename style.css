@@ -23,7 +23,7 @@ h1 {
     font-family: "Dakota", cursive;
     font-size: 4.5rem;
     font-weight: bold;
-    margin-bottom: 40px;
+    margin: 0 0 40px 0;
 }
 
 p {
