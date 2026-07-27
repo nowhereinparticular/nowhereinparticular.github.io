@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    background: hotpink;
+    background: EFE6D6;
     color: #2E2B28;
 
     text-align: center;
@@ -21,15 +21,15 @@ body {
 
 h1 {
     font-family: "Dakota", cursive;
-    font-size: 4.5rem;
+    font-size: 3rem;
     font-weight: bold;
-    margin: 0 0 40px 0;
+    margin: 0 0 20px 0;
 }
 
 p {
     font-family: Georgia, serif;
-    font-size: 1.3rem;
-    line-height: 1.8;
+    font-size: 1.1rem;
+    line-height: 1.9;
     margin: 0;
 }
 
