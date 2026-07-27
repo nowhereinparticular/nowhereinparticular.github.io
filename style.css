@@ -3,66 +3,51 @@
     src: url("Dakota.ttf") format("truetype");
 }
 
-body {
-    margin: 0;
-    min-height: 100vh;
+body{
+    margin:0;
+    min-height:100vh;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-    background: #F7F5EF;
+    background:#F8F6F1;
+    color:#2d2d2d;
 }
 
-.cover {
-    text-align: center;
+.landing{
+    text-align:center;
 }
 
-#notebook {
-
-    width: 320px;
-
-    cursor: pointer;
-
-    transition: transform 0.3s ease,
-                filter 0.3s ease;
-
+h1{
+    font-family:"Dakota", cursive;
+    font-size:4rem;
+    font-weight:bold;
+    margin-bottom:35px;
 }
 
-#notebook:hover {
-
-    transform: scale(1.05) rotate(-2deg);
-
-    filter: drop-shadow(0 10px 20px rgba(0,0,0,.12));
-
+p{
+    font-family:Georgia, serif;
+    font-size:1.3rem;
+    line-height:1.8;
+    margin:0;
 }
 
-h1 {
-
-    font-family: "Dakota", cursive;
-
-    font-size: 3rem;
-
-    font-weight: bold;
-
-    margin-bottom: 30px;
-
-    color: #2E2B28;
-
-    text-align: center;
-
+p + p{
+    margin-top:30px;
 }
 
-p {
+.notebook-link{
+    display:inline-block;
+    margin-top:45px;
+    transition:transform .25s ease;
+}
 
-    font-family: Georgia, serif;
+.notebook-link:hover{
+    transform:scale(1.08) rotate(-2deg);
+}
 
-    font-size: 1.1rem;
-
-    line-height: 1.9;
-
-    color: #5B5147;
-
-    text-align: center;
-
+.notebook-link img{
+    width:90px;
+    display:block;
 }
