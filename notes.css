@@ -48,3 +48,73 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+/* ===========================
+   STORY POPUP
+=========================== */
+
+.overlay {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(8px);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.35s ease;
+}
+
+.overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.paper {
+    width: min(700px, 90%);
+    max-height: 85vh;
+
+    overflow-y: auto;
+
+    background: #FAF6EE;
+
+    padding: 55px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 20px 60px rgba(0,0,0,.20);
+
+    transform: translateY(20px);
+    opacity: 0;
+
+    transition: .35s ease;
+}
+
+.overlay.show .paper {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.close {
+    float: right;
+
+    font-size: 32px;
+
+    cursor: pointer;
+
+    color: #888;
+}
+
+.close:hover {
+    color: black;
+}
+
+.time {
+    color: gray;
+    margin-bottom: 35px;
+}
