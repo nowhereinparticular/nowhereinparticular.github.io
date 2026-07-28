@@ -118,3 +118,48 @@ a:hover {
     color: gray;
     margin-bottom: 35px;
 }
+
+.notes-list{
+    width: min(700px,90%);
+    margin:40px auto;
+}
+
+.note-card{
+
+    background:#faf6ee;
+
+    border-radius:12px;
+
+    padding:25px;
+
+    margin-bottom:18px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.note-card:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 28px rgba(0,0,0,.12);
+
+}
+
+.note-date h3{
+    margin:0;
+    font-size:23px;
+}
+
+.note-date p{
+    margin:5px 0 18px;
+    color:gray;
+}
+
+.note-preview{
+    color:#666;
+}
